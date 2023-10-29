@@ -1,8 +1,8 @@
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
-    if (randomNumber === 1) return "Rock";
-    else if (randomNumber === 2) return "Paper";
-    else if (randomNumber === 3) return "Scissor";
+    if (randomNumber === 1) return "rock";
+    else if (randomNumber === 2) return "paper";
+    else if (randomNumber === 3) return "scissor";
     else return "something's wrong";
 }
 
@@ -10,9 +10,6 @@ let playerScore = 0;
 let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
-
-    playerSelection = playerSelection.toLowerCase();
-    computerSelection = computerSelection.toLowerCase();
 
     if (playerSelection === computerSelection) {
         return "No one wins. player score: " + playerScore + " computer score: " + computerScore;
