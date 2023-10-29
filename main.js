@@ -3,7 +3,7 @@ function getComputerChoice() {
     if (randomNumber === 1) return "rock";
     else if (randomNumber === 2) return "paper";
     else if (randomNumber === 3) return "scissor";
-    else return "something's wrong";
+    else { return "something's wrong"; }
 }
 
 let playerScore = 0;
@@ -72,6 +72,7 @@ function game() {
             playerScore = 0;
             computerScore = 0;
         }
+        else { finalResult.textContent = ''; }
     });
 
 }
